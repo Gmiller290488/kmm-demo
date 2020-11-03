@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedSelectAllLaunchesInfo, SharedRuntimeQuery<__covariant RowType>, SharedRocket, SharedLaunch, SharedLinks, SharedRocket_, SharedRocketLaunch, SharedRuntimeTransacterTransaction, SharedKotlinByteArray, SharedKotlinArray<T>, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_serialization_coreUpdateMode, SharedKotlinByteIterator, SharedKotlinEnum<E>;
+@class SharedLinks, SharedRocket, SharedRocketLaunch, SharedSelectAllLaunchesInfo, SharedRuntimeQuery<__covariant RowType>, SharedRocket_, SharedLaunch, SharedRuntimeTransacterTransaction, SharedKotlinArray<T>, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedKotlinx_serialization_coreUpdateMode, SharedKotlinByteArray, SharedKotlinEnum<E>, SharedKotlinByteIterator;
 
-@protocol SharedAppDatabaseQueries, SharedRuntimeTransactionWithoutReturn, SharedRuntimeTransactionWithReturn, SharedRuntimeTransacter, SharedAppDatabase, SharedRuntimeSqlDriver, SharedRuntimeSqlDriverSchema, SharedKotlinx_serialization_coreKSerializer, SharedRuntimeTransactionCallbacks, SharedRuntimeSqlPreparedStatement, SharedRuntimeSqlCursor, SharedRuntimeCloseable, SharedRuntimeQueryListener, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinIterator, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedKotlinKClass, SharedKotlinComparable, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier;
+@protocol SharedKotlinx_serialization_coreKSerializer, SharedAppDatabaseQueries, SharedRuntimeTransactionWithoutReturn, SharedRuntimeTransactionWithReturn, SharedRuntimeTransacter, SharedAppDatabase, SharedRuntimeSqlDriver, SharedRuntimeSqlDriverSchema, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedRuntimeTransactionCallbacks, SharedRuntimeSqlPreparedStatement, SharedRuntimeSqlCursor, SharedRuntimeCloseable, SharedRuntimeQueryListener, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinIterator, SharedKotlinx_serialization_coreSerializersModuleCollector, SharedKotlinKClass, SharedKotlinComparable, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -138,6 +138,105 @@ __attribute__((swift_name("KotlinBoolean")))
 + (instancetype)numberWithBool:(BOOL)value;
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Greeting")))
+@interface SharedGreeting : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (NSString *)greeting __attribute__((swift_name("greeting()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Platform")))
+@interface SharedPlatform : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (readonly) NSString *platform __attribute__((swift_name("platform")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Links")))
+@interface SharedLinks : SharedBase
+- (instancetype)initWithMissionPatchUrl:(NSString * _Nullable)missionPatchUrl articleUrl:(NSString * _Nullable)articleUrl __attribute__((swift_name("init(missionPatchUrl:articleUrl:)"))) __attribute__((objc_designated_initializer));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (SharedLinks *)doCopyMissionPatchUrl:(NSString * _Nullable)missionPatchUrl articleUrl:(NSString * _Nullable)articleUrl __attribute__((swift_name("doCopy(missionPatchUrl:articleUrl:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable articleUrl __attribute__((swift_name("articleUrl")));
+@property (readonly) NSString * _Nullable missionPatchUrl __attribute__((swift_name("missionPatchUrl")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Links.Companion")))
+@interface SharedLinksCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Rocket")))
+@interface SharedRocket : SharedBase
+- (instancetype)initWithId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("init(id:name:type:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (SharedRocket *)doCopyId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("doCopy(id:name:type:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) NSString *type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Rocket.Companion")))
+@interface SharedRocketCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RocketLaunch")))
+@interface SharedRocketLaunch : SharedBase
+- (instancetype)initWithFlightNumber:(int32_t)flightNumber missionName:(NSString *)missionName launchYear:(int32_t)launchYear launchDateUTC:(NSString *)launchDateUTC rocket:(SharedRocket *)rocket details:(NSString * _Nullable)details launchSuccess:(SharedBoolean * _Nullable)launchSuccess links:(SharedLinks *)links __attribute__((swift_name("init(flightNumber:missionName:launchYear:launchDateUTC:rocket:details:launchSuccess:links:)"))) __attribute__((objc_designated_initializer));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component4 __attribute__((swift_name("component4()")));
+- (SharedRocket *)component5 __attribute__((swift_name("component5()")));
+- (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
+- (SharedBoolean * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (SharedLinks *)component8 __attribute__((swift_name("component8()")));
+- (SharedRocketLaunch *)doCopyFlightNumber:(int32_t)flightNumber missionName:(NSString *)missionName launchYear:(int32_t)launchYear launchDateUTC:(NSString *)launchDateUTC rocket:(SharedRocket *)rocket details:(NSString * _Nullable)details launchSuccess:(SharedBoolean * _Nullable)launchSuccess links:(SharedLinks *)links __attribute__((swift_name("doCopy(flightNumber:missionName:launchYear:launchDateUTC:rocket:details:launchSuccess:links:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable details __attribute__((swift_name("details")));
+@property (readonly) int32_t flightNumber __attribute__((swift_name("flightNumber")));
+@property (readonly) NSString *launchDateUTC __attribute__((swift_name("launchDateUTC")));
+@property (readonly) SharedBoolean * _Nullable launchSuccess __attribute__((swift_name("launchSuccess")));
+@property (readonly) int32_t launchYear __attribute__((swift_name("launchYear")));
+@property (readonly) SharedLinks *links __attribute__((swift_name("links")));
+@property (readonly) NSString *missionName __attribute__((swift_name("missionName")));
+@property (readonly) SharedRocket *rocket __attribute__((swift_name("rocket")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RocketLaunch.Companion")))
+@interface SharedRocketLaunchCompanion : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
 __attribute__((swift_name("RuntimeTransacter")))
 @protocol SharedRuntimeTransacter
 @required
@@ -170,8 +269,16 @@ __attribute__((swift_name("AppDatabaseQueries")))
 - (void)removeAllRockets __attribute__((swift_name("removeAllRockets()")));
 - (SharedRuntimeQuery<SharedSelectAllLaunchesInfo *> *)selectAllLaunchesInfo __attribute__((swift_name("selectAllLaunchesInfo()")));
 - (SharedRuntimeQuery<id> *)selectAllLaunchesInfoMapper:(id (^)(SharedLong *, NSString *, SharedInt *, NSString *, NSString * _Nullable, SharedBoolean * _Nullable, NSString *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectAllLaunchesInfo(mapper:)")));
-- (SharedRuntimeQuery<SharedRocket *> *)selectRocketByIdId:(NSString *)id __attribute__((swift_name("selectRocketById(id:)")));
+- (SharedRuntimeQuery<SharedRocket_ *> *)selectRocketByIdId:(NSString *)id __attribute__((swift_name("selectRocketById(id:)")));
 - (SharedRuntimeQuery<id> *)selectRocketByIdId:(NSString *)id mapper:(id (^)(NSString *, NSString *, NSString *))mapper __attribute__((swift_name("selectRocketById(id:mapper:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DatabaseDriverFactory")))
+@interface SharedDatabaseDriverFactory : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (id<SharedRuntimeSqlDriver>)createDriver __attribute__((swift_name("createDriver()")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -203,13 +310,13 @@ __attribute__((swift_name("Launch")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Rocket")))
-@interface SharedRocket : SharedBase
+__attribute__((swift_name("Rocket_")))
+@interface SharedRocket_ : SharedBase
 - (instancetype)initWithId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("init(id:name:type:)"))) __attribute__((objc_designated_initializer));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
 - (NSString *)component2 __attribute__((swift_name("component2()")));
 - (NSString *)component3 __attribute__((swift_name("component3()")));
-- (SharedRocket *)doCopyId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("doCopy(id:name:type:)")));
+- (SharedRocket_ *)doCopyId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("doCopy(id:name:type:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -252,103 +359,24 @@ __attribute__((swift_name("SelectAllLaunchesInfo")))
 @property (readonly) NSString * _Nullable type __attribute__((swift_name("type")));
 @end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Links")))
-@interface SharedLinks : SharedBase
-- (instancetype)initWithMissionPatchUrl:(NSString * _Nullable)missionPatchUrl articleUrl:(NSString * _Nullable)articleUrl __attribute__((swift_name("init(missionPatchUrl:articleUrl:)"))) __attribute__((objc_designated_initializer));
-- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
-- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
-- (SharedLinks *)doCopyMissionPatchUrl:(NSString * _Nullable)missionPatchUrl articleUrl:(NSString * _Nullable)articleUrl __attribute__((swift_name("doCopy(missionPatchUrl:articleUrl:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable articleUrl __attribute__((swift_name("articleUrl")));
-@property (readonly) NSString * _Nullable missionPatchUrl __attribute__((swift_name("missionPatchUrl")));
+__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
+@protocol SharedKotlinx_serialization_coreSerializationStrategy
+@required
+- (void)serializeEncoder:(id<SharedKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
+@property (readonly) id<SharedKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
 @end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Links.Companion")))
-@interface SharedLinksCompanion : SharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
+@protocol SharedKotlinx_serialization_coreDeserializationStrategy
+@required
+- (id _Nullable)deserializeDecoder:(id<SharedKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
+- (id _Nullable)patchDecoder:(id<SharedKotlinx_serialization_coreDecoder>)decoder old:(id _Nullable)old __attribute__((swift_name("patch(decoder:old:)"))) __attribute__((unavailable("Patch function is deprecated for removal since this functionality is no longer supported by serializer.Some formats may provide implementation-specific patching in their Decoders.")));
+@property (readonly) id<SharedKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
 @end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Rocket_")))
-@interface SharedRocket_ : SharedBase
-- (instancetype)initWithId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("init(id:name:type:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
-- (NSString *)component3 __attribute__((swift_name("component3()")));
-- (SharedRocket_ *)doCopyId:(NSString *)id name:(NSString *)name type:(NSString *)type __attribute__((swift_name("doCopy(id:name:type:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *id __attribute__((swift_name("id")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) NSString *type __attribute__((swift_name("type")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Rocket_.Companion")))
-@interface SharedRocket_Companion : SharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("RocketLaunch")))
-@interface SharedRocketLaunch : SharedBase
-- (instancetype)initWithFlightNumber:(int32_t)flightNumber missionName:(NSString *)missionName launchYear:(int32_t)launchYear launchDateUTC:(NSString *)launchDateUTC rocket:(SharedRocket_ *)rocket details:(NSString * _Nullable)details launchSuccess:(SharedBoolean * _Nullable)launchSuccess links:(SharedLinks *)links __attribute__((swift_name("init(flightNumber:missionName:launchYear:launchDateUTC:rocket:details:launchSuccess:links:)"))) __attribute__((objc_designated_initializer));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
-- (int32_t)component3 __attribute__((swift_name("component3()")));
-- (NSString *)component4 __attribute__((swift_name("component4()")));
-- (SharedRocket_ *)component5 __attribute__((swift_name("component5()")));
-- (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
-- (SharedBoolean * _Nullable)component7 __attribute__((swift_name("component7()")));
-- (SharedLinks *)component8 __attribute__((swift_name("component8()")));
-- (SharedRocketLaunch *)doCopyFlightNumber:(int32_t)flightNumber missionName:(NSString *)missionName launchYear:(int32_t)launchYear launchDateUTC:(NSString *)launchDateUTC rocket:(SharedRocket_ *)rocket details:(NSString * _Nullable)details launchSuccess:(SharedBoolean * _Nullable)launchSuccess links:(SharedLinks *)links __attribute__((swift_name("doCopy(flightNumber:missionName:launchYear:launchDateUTC:rocket:details:launchSuccess:links:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable details __attribute__((swift_name("details")));
-@property (readonly) int32_t flightNumber __attribute__((swift_name("flightNumber")));
-@property (readonly) NSString *launchDateUTC __attribute__((swift_name("launchDateUTC")));
-@property (readonly) SharedBoolean * _Nullable launchSuccess __attribute__((swift_name("launchSuccess")));
-@property (readonly) int32_t launchYear __attribute__((swift_name("launchYear")));
-@property (readonly) SharedLinks *links __attribute__((swift_name("links")));
-@property (readonly) NSString *missionName __attribute__((swift_name("missionName")));
-@property (readonly) SharedRocket_ *rocket __attribute__((swift_name("rocket")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("RocketLaunch.Companion")))
-@interface SharedRocketLaunchCompanion : SharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Greeting")))
-@interface SharedGreeting : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (NSString *)greeting __attribute__((swift_name("greeting()")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Platform")))
-@interface SharedPlatform : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property (readonly) NSString *platform __attribute__((swift_name("platform")));
+__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
+@protocol SharedKotlinx_serialization_coreKSerializer <SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDeserializationStrategy>
+@required
 @end;
 
 __attribute__((swift_name("RuntimeTransactionCallbacks")))
@@ -406,61 +434,6 @@ __attribute__((swift_name("RuntimeQuery")))
 - (void)notifyDataChanged __attribute__((swift_name("notifyDataChanged()")));
 - (void)removeListenerListener:(id<SharedRuntimeQueryListener>)listener __attribute__((swift_name("removeListener(listener:)")));
 @property (readonly) RowType (^mapper)(id<SharedRuntimeSqlCursor>) __attribute__((swift_name("mapper")));
-@end;
-
-__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
-@protocol SharedKotlinx_serialization_coreSerializationStrategy
-@required
-- (void)serializeEncoder:(id<SharedKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
-@property (readonly) id<SharedKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
-@end;
-
-__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
-@protocol SharedKotlinx_serialization_coreDeserializationStrategy
-@required
-- (id _Nullable)deserializeDecoder:(id<SharedKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
-- (id _Nullable)patchDecoder:(id<SharedKotlinx_serialization_coreDecoder>)decoder old:(id _Nullable)old __attribute__((swift_name("patch(decoder:old:)"))) __attribute__((unavailable("Patch function is deprecated for removal since this functionality is no longer supported by serializer.Some formats may provide implementation-specific patching in their Decoders.")));
-@property (readonly) id<SharedKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
-@end;
-
-__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
-@protocol SharedKotlinx_serialization_coreKSerializer <SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDeserializationStrategy>
-@required
-@end;
-
-__attribute__((swift_name("RuntimeTransacterTransaction")))
-@interface SharedRuntimeTransacterTransaction : SharedBase <SharedRuntimeTransactionCallbacks>
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (void)afterCommitFunction:(void (^)(void))function __attribute__((swift_name("afterCommit(function:)")));
-- (void)afterRollbackFunction:(void (^)(void))function __attribute__((swift_name("afterRollback(function:)")));
-- (void)endTransactionSuccessful:(BOOL)successful __attribute__((swift_name("endTransaction(successful:)")));
-@property (readonly) SharedRuntimeTransacterTransaction * _Nullable enclosingTransaction __attribute__((swift_name("enclosingTransaction")));
-@end;
-
-__attribute__((swift_name("RuntimeSqlPreparedStatement")))
-@protocol SharedRuntimeSqlPreparedStatement
-@required
-- (void)bindBytesIndex:(int32_t)index value:(SharedKotlinByteArray * _Nullable)value __attribute__((swift_name("bindBytes(index:value:)")));
-- (void)bindDoubleIndex:(int32_t)index value:(SharedDouble * _Nullable)value __attribute__((swift_name("bindDouble(index:value:)")));
-- (void)bindLongIndex:(int32_t)index value:(SharedLong * _Nullable)value __attribute__((swift_name("bindLong(index:value:)")));
-- (void)bindStringIndex:(int32_t)index value:(NSString * _Nullable)value __attribute__((swift_name("bindString(index:value:)")));
-@end;
-
-__attribute__((swift_name("RuntimeSqlCursor")))
-@protocol SharedRuntimeSqlCursor <SharedRuntimeCloseable>
-@required
-- (SharedKotlinByteArray * _Nullable)getBytesIndex:(int32_t)index __attribute__((swift_name("getBytes(index:)")));
-- (SharedDouble * _Nullable)getDoubleIndex:(int32_t)index __attribute__((swift_name("getDouble(index:)")));
-- (SharedLong * _Nullable)getLongIndex:(int32_t)index __attribute__((swift_name("getLong(index:)")));
-- (NSString * _Nullable)getStringIndex:(int32_t)index __attribute__((swift_name("getString(index:)")));
-- (BOOL)next __attribute__((swift_name("next()")));
-@end;
-
-__attribute__((swift_name("RuntimeQueryListener")))
-@protocol SharedRuntimeQueryListener
-@required
-- (void)queryResultsChanged __attribute__((swift_name("queryResultsChanged()")));
 @end;
 
 __attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
@@ -527,17 +500,39 @@ __attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
 @property (readonly) SharedKotlinx_serialization_coreUpdateMode *updateMode __attribute__((swift_name("updateMode"))) __attribute__((unavailable("Update mode in Decoder is deprecated for removal. Update behaviour is now considered an implementation detail of the format that should not concern serializer.")));
 @end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinByteArray")))
-@interface SharedKotlinByteArray : SharedBase
-+ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
-+ (instancetype)arrayWithSize:(int32_t)size init:(SharedByte *(^)(SharedInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (int8_t)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (SharedKotlinByteIterator *)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
+__attribute__((swift_name("RuntimeTransacterTransaction")))
+@interface SharedRuntimeTransacterTransaction : SharedBase <SharedRuntimeTransactionCallbacks>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)afterCommitFunction:(void (^)(void))function __attribute__((swift_name("afterCommit(function:)")));
+- (void)afterRollbackFunction:(void (^)(void))function __attribute__((swift_name("afterRollback(function:)")));
+- (void)endTransactionSuccessful:(BOOL)successful __attribute__((swift_name("endTransaction(successful:)")));
+@property (readonly) SharedRuntimeTransacterTransaction * _Nullable enclosingTransaction __attribute__((swift_name("enclosingTransaction")));
+@end;
+
+__attribute__((swift_name("RuntimeSqlPreparedStatement")))
+@protocol SharedRuntimeSqlPreparedStatement
+@required
+- (void)bindBytesIndex:(int32_t)index value:(SharedKotlinByteArray * _Nullable)value __attribute__((swift_name("bindBytes(index:value:)")));
+- (void)bindDoubleIndex:(int32_t)index value:(SharedDouble * _Nullable)value __attribute__((swift_name("bindDouble(index:value:)")));
+- (void)bindLongIndex:(int32_t)index value:(SharedLong * _Nullable)value __attribute__((swift_name("bindLong(index:value:)")));
+- (void)bindStringIndex:(int32_t)index value:(NSString * _Nullable)value __attribute__((swift_name("bindString(index:value:)")));
+@end;
+
+__attribute__((swift_name("RuntimeSqlCursor")))
+@protocol SharedRuntimeSqlCursor <SharedRuntimeCloseable>
+@required
+- (SharedKotlinByteArray * _Nullable)getBytesIndex:(int32_t)index __attribute__((swift_name("getBytes(index:)")));
+- (SharedDouble * _Nullable)getDoubleIndex:(int32_t)index __attribute__((swift_name("getDouble(index:)")));
+- (SharedLong * _Nullable)getLongIndex:(int32_t)index __attribute__((swift_name("getLong(index:)")));
+- (NSString * _Nullable)getStringIndex:(int32_t)index __attribute__((swift_name("getString(index:)")));
+- (BOOL)next __attribute__((swift_name("next()")));
+@end;
+
+__attribute__((swift_name("RuntimeQueryListener")))
+@protocol SharedRuntimeQueryListener
+@required
+- (void)queryResultsChanged __attribute__((swift_name("queryResultsChanged()")));
 @end;
 
 __attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
@@ -650,19 +645,24 @@ __attribute__((swift_name("Kotlinx_serialization_coreUpdateMode")))
 @property (class, readonly) SharedKotlinx_serialization_coreUpdateMode *update __attribute__((swift_name("update")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinByteArray")))
+@interface SharedKotlinByteArray : SharedBase
++ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
++ (instancetype)arrayWithSize:(int32_t)size init:(SharedByte *(^)(SharedInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (int8_t)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (SharedKotlinByteIterator *)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end;
+
 __attribute__((swift_name("KotlinIterator")))
 @protocol SharedKotlinIterator
 @required
 - (BOOL)hasNext __attribute__((swift_name("hasNext()")));
 - (id _Nullable)next_ __attribute__((swift_name("next_()")));
-@end;
-
-__attribute__((swift_name("KotlinByteIterator")))
-@interface SharedKotlinByteIterator : SharedBase <SharedKotlinIterator>
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (SharedByte *)next_ __attribute__((swift_name("next_()")));
-- (int8_t)nextByte __attribute__((swift_name("nextByte()")));
 @end;
 
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
@@ -694,6 +694,14 @@ __attribute__((swift_name("KotlinKClass")))
 - (BOOL)isInstanceValue:(id _Nullable)value __attribute__((swift_name("isInstance(value:)")));
 @property (readonly) NSString * _Nullable qualifiedName __attribute__((swift_name("qualifiedName")));
 @property (readonly) NSString * _Nullable simpleName __attribute__((swift_name("simpleName")));
+@end;
+
+__attribute__((swift_name("KotlinByteIterator")))
+@interface SharedKotlinByteIterator : SharedBase <SharedKotlinIterator>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (SharedByte *)next_ __attribute__((swift_name("next_()")));
+- (int8_t)nextByte __attribute__((swift_name("nextByte()")));
 @end;
 
 #pragma clang diagnostic pop

@@ -87,7 +87,7 @@ android {
 
 sqldelight {
     database("AppDatabase") {
-        packageName = "com.jetbrains.handson.kmm.shared.cache"
+        packageName = "com.example.kmmdemo.shared.cache"
     }
 }
 

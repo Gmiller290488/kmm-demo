@@ -1,11 +1,12 @@
-package com.jetbrains.handson.kmm.shared.cache
+package com.example.kmmdemo.shared.cache
 
-import com.jetbrains.handson.kmm.shared.cache.AppDatabase
+import com.example.kmmdemo.shared.cache.AppDatabase
 import com.squareup.sqldelight.db.SqlDriver
 import com.squareup.sqldelight.drivers.native.NativeSqliteDriver
 
 actual class DatabaseDriverFactory {
     actual fun createDriver(): SqlDriver {
-        return NativeSqliteDriver(AppDatabase.schema, "test.db")
+        return NativeSqliteDriver(AppDatabase.Schema, "test.db")
     }
 }
+

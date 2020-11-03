@@ -1,4 +1,4 @@
-package com.jetbrains.handson.kmm.shared.cache
+package com.example.kmmdemo.shared.cache
 
 import com.squareup.sqldelight.db.SqlDriver
 

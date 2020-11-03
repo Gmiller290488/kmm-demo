@@ -1,9 +1,9 @@
-package com.jetbrains.handson.kmm.shared.cache
+package com.example.kmmdemo.shared.cache
 
-import com.jetbrains.handson.kmm.shared.cache.AppDatabase
-import com.jetbrains.handson.kmm.shared.entity.Links
-import com.jetbrains.handson.kmm.shared.entity.Rocket
-import com.jetbrains.handson.kmm.shared.entity.RocketLaunch
+import com.example.kmmdemo.shared.cache.AppDatabase
+import com.example.kmmdemo.shared.entity.Links
+import com.example.kmmdemo.shared.entity.Rocket
+import com.example.kmmdemo.shared.entity.RocketLaunch
 
 internal class Database(databaseDriverFactory: DatabaseDriverFactory) {
     private val database = AppDatabase(databaseDriverFactory.createDriver())
