@@ -4,7 +4,7 @@ ADDED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/mai
 INJECTED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/main/AndroidManifest.xml:2:1-17:12
 INJECTED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/main/AndroidManifest.xml:2:1-17:12
 INJECTED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/main/AndroidManifest.xml:2:1-17:12
-MERGED from [:shared] /Users/garethmiller/Documents/projects/KMMDemo/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:shared] /Users/garethmiller/Documents/projects/KMMDemo/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [com.squareup.sqldelight:android-driver:1.4.3] /Users/garethmiller/.gradle/caches/transforms-2/files-2.1/3a137dbab886bffbe706e4593eb4f2a3/android-driver-1.4.3/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.2.0] /Users/garethmiller/.gradle/caches/transforms-2/files-2.1/ec7f1f73c40a0fa8da8ae4135ebe2189/material-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/garethmiller/.gradle/caches/transforms-2/files-2.1/1cc3f55e6738a269297332e6e87ff868/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -163,3 +163,7 @@ INJECTED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/
 		INJECTED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/main/AndroidManifest.xml
 		ADDED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/main/AndroidManifest.xml
 		INJECTED from /Users/garethmiller/Documents/projects/KMMDemo/androidDemoApp/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [:shared] /Users/garethmiller/Documents/projects/KMMDemo/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from [:shared] /Users/garethmiller/Documents/projects/KMMDemo/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-64

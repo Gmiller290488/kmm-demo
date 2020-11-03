@@ -15,7 +15,6 @@ pluginManagement {
 }
 rootProject.name = "KMMDemo"
 
-
 include(":androidDemoApp")
 include(":shared")
 
