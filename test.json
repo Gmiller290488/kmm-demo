@@ -1,0 +1,62 @@
+{
+  "Meals": [
+    {
+      "id": "1598044e-5259-11e9-8647-d663bd870b02",
+      "name": "Tomato pasta",
+      "quantity": [{
+        "quantity": 1 },
+        {
+          "quantity": 2
+        },
+        {
+          "quantity": 3
+        }],
+      "availableFromDate": "1605802429",
+      "expiryDate": "1905802429",
+      "info": "Vegetarian",
+      "hot": false,
+      "locationLat": 57.508865,
+      "locationLong": -6.292,
+      "distance": null
+    },
+    {
+      "id": "2be2d854-a067-43ec-a488-2e69f0f2a624",
+      "name": "Pizza",
+      "quantity": [{
+        "quantity": 1 },
+        {
+        "quantity": 2
+        },
+        {
+          "quantity": 3
+        }
+      ],
+      "availableFromDate": "1605802429",
+      "expiryDate": "1905902429",
+      "info": "Meat",
+      "hot": false,
+      "locationLat": 51.509465,
+      "locationLong": -0.135392,
+      "distance": null
+    },
+    {
+      "id": "182647f0-71fd-497d-9f67-2c7def1fc2d3",
+      "name": "Stir-fry",
+      "quantity": [{
+        "quantity": 1 },
+        {
+          "quantity": 2
+        },
+        {
+          "quantity": 3
+        }],
+      "availableFromDate": "1605802429",
+      "expiryDate": "1958024290",
+      "info": "Vegan",
+      "hot": false,
+      "locationLat": 40.509465,
+      "locationLong": -0.2343392,
+      "distance": null
+    }
+  ]
+}
